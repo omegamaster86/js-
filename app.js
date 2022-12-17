@@ -5,7 +5,5 @@ for (i = 1; i <= 99; i++){
         console.log('Fizz' + i);
     }  else if ((i % 5)==0) {
         console.log('Buzz' + i);
-    }  else {
-        console.log();
     }
 }
