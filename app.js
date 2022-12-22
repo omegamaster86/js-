@@ -1,7 +1,7 @@
-const Name = prompt("日本の首都は？");
+const capital = prompt("日本の首都は？");
 
-while (Name.includes("")) {
-    if (Name == "東京") {
+while (true) {
+    if (capital == "東京") {
         alert ("正解です");
         break
     }  else {
