@@ -1,9 +1,11 @@
-for (i = 1; i <= 99; i++){
-    if ( i % 3 == 0 && i % 5 == 0 ) {
-        console.log('FizzBuzz' + i)
-    }  else if ((i % 3)==0) {
-        console.log('Fizz' + i);
-    }  else if ((i % 5)==0) {
-        console.log('Buzz' + i);
+const capital = prompt("日本の首都は？");
+
+while (true) {
+    if (capital === "東京") {
+        alert ("正解です");
+        break
+    }  else {
+        alert ("不正解です");
+        break
     }
 }
