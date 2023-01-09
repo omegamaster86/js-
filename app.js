@@ -1,12 +1,12 @@
-let tasks = ['0 : 掃除','1 : 買い物','2 : 散歩'];
-let allTask = document.getElementById("all-task");
+const tasks = ['0 : 掃除','1 : 買い物','2 : 散歩'];
+const allTask ="=======================\n現在持っているタスク一覧\n=======================";
 
-console.log(allTask.textContent);
-for (let todo of tasks) {
+console.log(allTask);
+for (const todo of tasks) {
     console.log(todo);
 }
 
-let newTask = prompt("タスク入力して下さい");
+const newTask = prompt("タスク入力して下さい");
 tasks.push('3 : ' + newTask);
 
 if (newTask === null) {
@@ -15,9 +15,13 @@ if (newTask === null) {
     alert("新しいタスクを追加しました。");
 }
 
-console.log(allTask.textContent);
+console.log(allTask);
 for (let todo of tasks) {
     console.log(todo);
 }
 
-alert("「確認、追加、削除、終了」の４つのいずれかを入力してください。");
+if (newTask === null) {
+   
+} else {
+    alert("「確認、追加、削除、終了」の４つのいずれかを入力してください。");
+}
